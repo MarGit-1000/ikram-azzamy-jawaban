@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman 2</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to bottom, #00c6ff, #ffffff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h1, .text-area, .image-container, .buttons {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+      animation-delay: 0s;
+    }
+
+    .image-container {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+      animation-delay: 0.5s;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-area {
+      background: #f9f9f9;
+      color: #333;
+      width: 100%;
+      max-width: 500px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      text-align: left;
+      animation-delay: 1s;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+      animation-delay: 1.5s;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #00c6ff;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      transform: scale(1.05);
+      background-color: #0086c3;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Tadrib Bagian B Halaman 18</h1>
+
+  <!-- Tempat Gambar -->
+  <div class="image-container">
+    <img src="tadribb.jpg" alt="Gambar 1">
+  </div>
+
+  <!-- Tempat Tulisan -->
+  <div class="text-area">
+    <p><strong>Jawaban<br><br>
+    1. Qada adalah ketetepan Allah SWT. yang telah ditetapkan sejak zaman azali kepada seluruh makhluk di alam semesta.Sedangkan Qadar adalah ketetapan Allah SWT. berdasarkan ukuran masing-masing atas doa dan usaha makhluk.<br><br>
+    2. Iman kepada takdir adalah meyakini dengan sepenuh hati bahwa Allah SWT. telah menentukan semua hal yang berhubungan dengan kehidupan makhluk fi alam semesta ini berdasarkan ukuran yang telah ditentukan<br><br>
+    3. Malaikat Jibril<br><br>
+    4. Artinya, mengimani dan meyakini bahwa Allah SWT. Maha mengetahui atas segala sesuatu.<br><br>
+    5. Takdir Mubram<br>
+        Mubram secara bahasa diambil dari bahasa Arab yang artinya,yang tidak dapat dibatalkan.Takdir mubram adalah ketetapan Allah SWT.yang tidak dapat diubah oleh manusia walau ada ikhtiar dab doa. Misalnya,kematian,warna kulit,bentuk hidung,jodoh,dan waktu kelahiran<br><br>
+    </strong></p>
+  </div>
+
+  <!-- Tempat Gambar Kedua -->
+  <div class="image-container">
+    <img src="https://via.placeholder.com/500x300" alt="Gambar 2">
+  </div>
+
+  <!-- Tombol Navigasi -->
+  <div class="buttons">
+    <a href="index.html">Kembali</a>
+    <a href="#" class="music-button" onclick="playMusic()">Putar Musik</a>
+  </div>
+</body>
+<script>
+    function playMusic() {
+      const audio = new Audio('gacor.mp3'); // Add path to your audio file
+      audio.play();
+    }
+
+</script>
+</html>

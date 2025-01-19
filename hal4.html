@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman 2</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to bottom, #00c6ff, #ffffff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h1, .text-area, .image-container, .buttons {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+      animation-delay: 0s;
+    }
+
+    .image-container {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+      animation-delay: 0.5s;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-area {
+      background: #f9f9f9;
+      color: #333;
+      width: 100%;
+      max-width: 500px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      text-align: left;
+      animation-delay: 1s;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+      animation-delay: 1.5s;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #00c6ff;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      transform: scale(1.05);
+      background-color: #0086c3;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Perbaikan Halaman 21</h1>
+
+  <!-- Tempat Gambar -->
+  <div class="image-container">
+    <img src="perbaikan.jpg" alt="Gambar 1">
+  </div>
+
+  <!-- Tempat Tulisan -->
+  <div class="text-area">
+    <p><strong>Jawaban<br><br>
+    1 Takdir Mualaq dapat berubah bergantung kepada sikap dan perilaku manusia.<br><br>
+    2. Kematian dan bencana alam dan kelahiran<br><br>
+    a.Kematian<br>
+    kematian adalah bagain dari qada mubram(ketetapan yang pasti)
+    <br>b. Bencana Alam<br>
+    Bencana alam termasuk kidatapan Allah yang terjadi sesuai kehendaknya. Namun, dampaknya dapat dipengaruhi oleh ikhtiar manusia.<br>
+    C.Kelahiran<br>
+    Kelahiran juga merupakan bagian dari kadar dan kadar. Allah telah menetapkan kapan dan dimana seseorang akan lahir, siapa orang tuanya, serta rezeki, usia, dan amalnya.<br><br>
+    3. manusia diperintahkan untuk menyerahkan hasilnya kepada Allah SWT.
+    <br><br>
+    4. segala sesuatu yang terjadi atau tidak,di langit dan bumi adalah kehendak Allah SWT.<br><br>
+    5. Iman kepada Qada dan Qadar berarti mengimani segala hal yang meliputi keduanya. <br><br>Iman kepada Qada dan Qadar disebut Iman kepada Takbir. Iman kepada Qada dan Qadar adalah meyakini dengan sepenuh hati bahwa Allah SWT telah menentukan semua hal yang berhubungan dengan kehidupan makhluk di alam semesta ini berdasarkan ukuran yang telah ditentukan.
+    
+    </strong></p>
+  </div>
+
+  <!-- Tempat Gambar Kedua -->
+  <div class="image-container">
+    <img src="https://via.placeholder.com/500x300" alt="Gambar 2">
+  </div>
+
+  <!-- Tombol Navigasi -->
+  <div class="buttons">
+    <a href="index.html">Kembali</a>
+    <a href="#" class="music-button" onclick="playMusic()">Putar Musik</a>
+  </div>
+</body>
+<script>
+    function playMusic() {
+      const audio = new Audio('gacor.mp3'); // Add path to your audio file
+      audio.play();
+    }
+
+</script>
+</html>
